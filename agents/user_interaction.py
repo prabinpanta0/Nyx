@@ -4,7 +4,7 @@ import sys
 import shlex
 from typing import Union, Dict, Any
 
-from .command_validator import validate_command_safety
+from command_validator import validate_command_safety
 
 
 def _display_plan_step(i: int, step: Dict[str, Any]) -> None:

@@ -5,7 +5,7 @@ import shlex
 import logging
 from typing import Tuple
 
-from .command_validator import validate_command_safety
+from command_validator import validate_command_safety
 
 
 def setup_logging():

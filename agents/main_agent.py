@@ -4,20 +4,20 @@ import shlex
 from typing import List, Dict, Any, Tuple
 
 # Local imports
-from .history_manager import (
+from history_manager import (
     load_history, save_history, estimate_context_size, 
     summarize_old_history, MAX_CONTEXT_SIZE
 )
-from .ai_client import (
+from ai_client import (
     stream_and_extract_plan, extract_json_with_retry,
     check_if_task_complete, stream_ai_response
 )
-from .command_executor import setup_logging, execute_command
-from .command_validator import normalize_plan, validate_command_safety
-from .user_interaction import (
+from command_executor import setup_logging, execute_command
+from command_validator import normalize_plan, validate_command_safety
+from user_interaction import (
     approve_plan, confirm_sudo_execution, get_user_continuation_choice
 )
-from .plan_generator import create_plan_generation_prompt
+from plan_generator import create_plan_generation_prompt
 
 # Global settings
 REQUIRE_PLAN_APPROVAL = False  # Can be toggled by user

@@ -3,9 +3,8 @@
 import os
 from typing import List, Dict, Any
 
-from .history_manager import get_failure_context
-from .command_executor import detect_os
-
+from history_manager import get_failure_context
+from command_executor import detect_os
 
 def create_plan_generation_prompt(user_prompt: str, history: List[Dict[str, Any]]) -> str:
     """Create the prompt for plan generation."""
